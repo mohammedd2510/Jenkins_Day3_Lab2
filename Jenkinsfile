@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         ssh_key = credentials('ssh_credentials')
-        server_ip = '18.206.186.114'
+        server_ip = '34.239.143.81'
         server_user = 'ubuntu'
     }
     stages {
