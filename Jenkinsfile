@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Copy WorkSpace') {
             steps {
-                sh'scp -i $ssh_key -r * $server_user@$server_ip:.'
+                sh'scp -i $ssh_key -r . $server_user@$server_ip:.'
             }
         }
     }
